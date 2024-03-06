@@ -1,0 +1,104 @@
+
+.footer1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 2rem;
+    gap: 2rem;
+}
+
+.footer1 > h2 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.footer1-container {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.footer1-container .footer1-steps {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    width: 100%;
+    height: fit-content;
+}
+
+hr {
+    border-bottom: 5px solid #E22426;
+    margin: 1.5rem 0;
+}
+
+
+
+
+
+.footer1-email {
+    display: flex;
+    gap: 1rem;
+}
+
+.footer1-email-heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer1-email-heading , .footer1-email-form {
+    flex: 1;
+}
+
+.footer1-email-heading > h2 {
+    color: #0087BE;
+    font-size: 30px;
+}
+
+.footer1-email-heading > p {
+    font-size: large;
+    line-height: 1.5rem;
+}
+
+.footer1-email-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+}
+
+.footer1-email-form form > input {
+    padding: 0.5rem;
+    color: lightgray;
+    font-size: large;
+}
+
+.footer1-email-form form > button {
+    font-size: 20px;
+    padding: 0.5rem;
+    border-radius: 40px;
+}
+
+
+
+
+@media screen and (max-width: 900px) {
+    .footer1-container .footer1-steps {
+        flex-direction: column;
+    }
+    .footer1-container {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .footer1-email {
+        flex-direction: column;
+        gap: 2.5rem;
+    }
+    .footer1-email-heading {
+        gap: 1rem;
+    }
+}
